@@ -1,5 +1,5 @@
 # Step 1: Build the React application
-FROM node:14-alpine as build-stage
+FROM node:13.12.0-alpine as build-stage
 
 # Set the working directory in the Docker image
 WORKDIR /app
