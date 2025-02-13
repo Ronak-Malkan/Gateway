@@ -1,5 +1,5 @@
 # Define the build stage
-FROM node:16-alpine as build-stage
+FROM node:16-alpine AS build-stage
 
 # Set the working directory
 WORKDIR /app
@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build
 
 # Define the production stage
-FROM nginx:stable-alpine as production-stage
+FROM nginx:stable-alpine AS production-stage
 
 # Copy built assets from the build stage to Nginx's serve directory
 COPY --from=build-stage /app/build /usr/share/nginx/html

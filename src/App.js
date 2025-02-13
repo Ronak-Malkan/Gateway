@@ -1,10 +1,12 @@
-import './App.css';
+import React from "react";
+import Network from "./components/Network";
+import "./App.css";
 
 function App() {
   return (
-    <h1>
-      Welcome to Ronak Verse!
-    </h1>
+    <div className="App">
+      <Network />
+    </div>
   );
 }
 

@@ -1,3 +1,17 @@
-h1 {
+.App {
   text-align: center;
+  background: #000; /* Deep space black */
+  height: 100vh;
+  width: 100%;
+}
+
+/* Pulsing animation for the network links */
+@keyframes pulse {
+  0% { stroke-opacity: 1; }
+  50% { stroke-opacity: 0.5; }
+  100% { stroke-opacity: 1; }
+}
+
+.pulse-line {
+  animation: pulse 2s infinite;
 }
